@@ -1,4 +1,4 @@
-namespace DIO_Cadastro_Series_dotnet.Enum
+namespace DIO_Cadastro_Series_dotnet
 {
     public enum Genero
     {
