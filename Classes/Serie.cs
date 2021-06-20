@@ -10,8 +10,9 @@ namespace DIO_Cadastro_Series_dotnet
         private int ano { get; set; }
         private bool ativa {get; set; }
 
-        public Serie(Genero genero, string titulo, string descricao, int ano)
+        public Serie(int id, Genero genero, string titulo, string descricao, int ano)
         {
+            this.Id = Id;
             this.Genero = genero;
             this.Titulo = titulo;
             this.Descricao = descricao;
@@ -26,6 +27,8 @@ namespace DIO_Cadastro_Series_dotnet
             retorno += "Título: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de Início: " + this.ano + Environment.NewLine;
+            retorno += "Excluído: " + this.ativa + Environment.NewLine;
+
 
             return retorno;
         }
