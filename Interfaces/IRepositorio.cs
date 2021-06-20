@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DIO_Cadastro_Series_dotnet
+namespace DIO_Cadastro_Series_dotnet.Interfaces
 {
     public interface IRepositorio<T>
     {
