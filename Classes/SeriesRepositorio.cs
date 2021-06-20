@@ -19,22 +19,22 @@ namespace DIO_Cadastro_Series_dotnet
 
         public void Insere(Serie entidade)
         {
-            throw new NotImplementedException();
+            listaSerie.Add(entidade);
         }
 
         public List<Serie> Lista()
         {
-            throw new NotImplementedException();
+            return listaSerie;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return listaSerie.Count;
         }
 
         public Serie RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return listaSerie[id];
         }
     }
 }
