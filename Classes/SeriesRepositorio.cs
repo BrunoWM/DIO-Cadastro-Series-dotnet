@@ -14,7 +14,7 @@ namespace DIO_Cadastro_Series_dotnet
 
         public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            listaSerie[id].Excluir();
         }
 
         public void Insere(Serie entidade)
