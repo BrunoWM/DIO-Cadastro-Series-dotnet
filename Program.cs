@@ -6,7 +6,33 @@ namespace DIO_Cadastro_Series_dotnet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string opcaoUsuario = ObterOpcaoUsuario();
+
+            while (opcaoUsuario.ToUpper() != "X") {
+                switch (opcaoUsuario) {
+                    case "1" :
+                        ListarSeries();
+                        break;
+                    case "2" :
+                        InserirSerie();
+                        break;
+                    case "3" :
+                        AtualizarSerie();
+                        break;
+                    case "4" :
+                        ExcluirSerie();
+                        break;
+                    case "5" :
+                        VisualizarSerie();
+                        break;
+                    case "C" :
+                        Console.Clear();
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+                opcaoUsuario = ObterOpcaoUsuario();       
+            }
         }
 
         private static string ObterOpcaoUsuario() {
