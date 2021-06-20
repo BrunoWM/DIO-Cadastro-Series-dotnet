@@ -2,7 +2,7 @@ using System;
 
 namespace DIO_Cadastro_Series_dotnet 
 {
-    public class Serie : EntidadeBase
+    public class Serie : EntidadeBase 
     {
         private Genero Genero { get; set; }
         private string Titulo { get; set; }
