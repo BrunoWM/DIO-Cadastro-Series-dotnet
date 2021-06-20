@@ -9,7 +9,7 @@ namespace DIO_Cadastro_Series_dotnet
         private List<Serie> listaSerie = new List<Serie>();
         public void Atualiza(int id, Serie entidade)
         {
-            throw new NotImplementedException();
+            listaSerie[id] = entidade;
         }
 
         public void Exclui(int id)

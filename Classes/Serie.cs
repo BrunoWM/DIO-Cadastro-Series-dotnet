@@ -8,6 +8,7 @@ namespace DIO_Cadastro_Series_dotnet
         private string Titulo { get; set; }
         private string Descricao { get; set; }
         private int ano { get; set; }
+        private bool ativa {get; set; }
 
         public Serie(Genero genero, string titulo, string descricao, int ano)
         {
@@ -15,7 +16,7 @@ namespace DIO_Cadastro_Series_dotnet
             this.Titulo = titulo;
             this.Descricao = descricao;
             this.ano = ano;
-
+            this.ativa = false;
         }
 
         public override string ToString()
