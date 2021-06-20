@@ -37,5 +37,9 @@ namespace DIO_Cadastro_Series_dotnet
         public int retornaId() {
             return this.Id;
         }
+
+        public void Excluir() {
+            this.ativa = false;
+        }
     }
 }
